@@ -1,0 +1,99 @@
+/* *** Slider *** */
+.image-slider {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 5px 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,.8);
+
+    .close {
+        color: $text-color;
+        position: absolute;
+        top: 1rem;
+        right: 1.7rem;
+        font-size: 3.5rem;
+        font-weight: bold;
+        transition: .3s ease;
+        z-index: 100;
+
+        &:hover, &:focus {
+            color: $text-color;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .slider-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 85%;
+        max-width: 1200px;
+        border: none;
+        background-color: transparent;
+
+        .slides {
+            text-align: center;
+            
+            .slides-number {
+                color: $text-color;
+                background-color: rgba(29, 25, 30, .8);
+                font-size: 1.7rem;
+                font-family: 'Lato', sans-serif;
+                padding: .6rem 2rem .4rem;
+                position: absolute;
+                bottom: 1rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 1rem;
+                }
+                @media screen and (max-width: 480px) {
+                    font-size: .75rem;
+                }
+            }
+
+            .portrait-img {
+                height: 98vh;
+            }
+
+            .landscape-img {
+                width: 76vw;
+            }
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 1rem;
+            margin-top: 4rem;
+            color: $text-color !important;
+            font-weight: bold;
+            font-size: 3rem;
+            transition: .6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+
+            &:hover {
+                background-color: rgba(0,0,0,.8);
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+    }
+}

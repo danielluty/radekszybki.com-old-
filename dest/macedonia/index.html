@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Animations -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Macedonia - Radek Szybki Foto</title>
+</head>
+
+<body id="rs-portfolio">
+    <div class="body-wrapper">
+        <!-- NAVBAR -->
+        <nav class="nav" id="my-navbar">
+            <!-- LOGO -->
+            <a href="#home" class="nav-logo">
+                <img src="../../img/logo-slim.svg">
+            </a>
+
+            <!-- TOGGLER -->
+            <div class="nav-toggler">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            <!-- NAV LINKS -->
+            <ul class="nav-ul">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../content/news/">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../content/contact/">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../../content/galleries/">Galerie</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- NAVBAR END -->
+
+        <!-- MAIN -->
+        <main class="main main-photo-page">
+            <h1>Macedonia</h1>
+
+            <div class="content-wrapper">
+                <div class="photo-wrapper">
+                    <h3>Ohrid</h3>
+                    <p>Jezioro Ohrydzkie nad Ohrydem to jedno z najpięknieszych basenów w całej Europie
+                        a już na pewno na Bałkanach. Co roku nad Albański jak i Macedoński brzeg
+                        przybywa setki tysięcy turystów z całego świata aby poczuł klimat tego miejsca.
+                        Jezioro długie po horyzont z górzystym brzegiem oraz przeźroczystą wodą jest
+                        idealnym miejscem na wypoczynek jednak nie warto tam jechać w lipcu i sierpniu,
+                        jest za gorąco. <br> Perełką jest miasto Ohryd położone na wschodnim brzegu skąd
+                        można łatwo dostać się na Albańską stronę. Nie duże, bardzo ładne miasto, pełne
+                        jest zabytków, knajp z tradycyjnym bałkańskim jedzeniem a najwięcej jest sklepów
+                        z ciuchami. Warto odwiedzić miejskie targowisko, wybrać się w niedługi rejs
+                        motorówką po jeziorze oraz pójść do przybrzeźnej knajpy na endemiczny gatunek
+                        łososia z rakiją. Zdecydowanie można spędzić tu kilka dni i się nie nudzić.</p>
+                </div>
+
+                <div class="image-grid">
+                    <div class="column">
+                        <img src="./1.jpg" class="fit-image" onclick="openSlider();currentSlide(1)">
+                        <img src="./2.jpg" class="fit-image" onclick="openSlider();currentSlide(2)">
+                        <img src="./3.jpg" class="fit-image" onclick="openSlider();currentSlide(3)">
+                        <img src="./4.jpg" class="fit-image" onclick="openSlider();currentSlide(4)">
+                        <img src="./5.jpg" class="fit-image" onclick="openSlider();currentSlide(5)">
+                        <img src="./6.jpg" class="fit-image" onclick="openSlider();currentSlide(6)">
+                        <img src="./7.jpg" class="fit-image" onclick="openSlider();currentSlide(7)">
+                        <img src="./8.jpg" class="fit-image" onclick="openSlider();currentSlide(8)">
+                    </div>
+                    <div class="column">
+                        <img src="./9.jpg" class="fit-image" onclick="openSlider();currentSlide(9)">
+                        <img src="./10.jpg" class="fit-image" onclick="openSlider();currentSlide(10)">
+                        <img src="./11.jpg" class="fit-image" onclick="openSlider();currentSlide(11)">
+                        <img src="./12.jpg" class="fit-image" onclick="openSlider();currentSlide(12)">
+                        <img src="./13.jpg" class="fit-image" onclick="openSlider();currentSlide(13)">
+                        <img src="./14.jpg" class="fit-image" onclick="openSlider();currentSlide(14)">
+                        <img src="./15.jpg" class="fit-image" onclick="openSlider();currentSlide(15)">
+                        <img src="./16.jpg" class="fit-image" onclick="openSlider();currentSlide(16)">
+                        <img src="./17.jpg" class="fit-image" onclick="openSlider();currentSlide(17)">
+                    </div>
+                    <div class="column">
+                        <img src="./18.jpg" class="fit-image" onclick="openSlider();currentSlide(18)">
+                        <img src="./19.jpg" class="fit-image" onclick="openSlider();currentSlide(19)">
+                        <img src="./20.jpg" class="fit-image" onclick="openSlider();currentSlide(20)">
+                        <img src="./21.jpg" class="fit-image" onclick="openSlider();currentSlide(21)">
+                        <img src="./22.jpg" class="fit-image" onclick="openSlider();currentSlide(22)">
+                        <img src="./23.jpg" class="fit-image" onclick="openSlider();currentSlide(23)">
+                        <img src="./24.jpg" class="fit-image" onclick="openSlider();currentSlide(24)">
+                        <img src="./25.jpg" class="fit-image" onclick="openSlider();currentSlide(25)">
+                    </div>
+                </div>
+
+        </main>
+        <!-- MAIN END -->
+    </div>
+
+
+
+    <!-- SLIDER -->
+    <div id="image-slider" class="image-slider">
+
+        <!-- CLOSE BUTTON -->
+        <span class="close" onclick="closeSlider()">&times;</span>
+
+        <!-- SLIDER CONTENT -->
+        <div class="slider-content">
+
+            <!-- IMAGE VIEWER -->
+            <div class="slides">
+                <div class="slides-number">1 / 25</div>
+                <img src="./1.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">2 / 25</div>
+                <img src="./2.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">3 / 25</div>
+                <img src="./3.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">4 / 25</div>
+                <img src="./4.jpg" class="portrait-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">5 / 25</div>
+                <img src="./5.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">6 / 25</div>
+                <img src="./6.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">7 / 25</div>
+                <img src="./7.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">8 / 25</div>
+                <img src="./8.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">9 / 25</div>
+                <img src="./9.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">10 / 25</div>
+                <img src="./10.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">11 / 25</div>
+                <img src="./11.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">12 / 25</div>
+                <img src="./12.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">13 / 25</div>
+                <img src="./13.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">14 / 25</div>
+                <img src="./14.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">15 / 25</div>
+                <img src="./15.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">16 / 25</div>
+                <img src="./16.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">17 / 25</div>
+                <img src="./17.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">18 / 25</div>
+                <img src="./18.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">19 / 25</div>
+                <img src="./19.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">20 / 25</div>
+                <img src="./20.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">21 / 25</div>
+                <img src="./21.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">22 / 25</div>
+                <img src="./22.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">23 / 25</div>
+                <img src="./23.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">24 / 25</div>
+                <img src="./24.jpg" class="landscape-img">
+            </div>
+            <div class="slides">
+                <div class="slides-number">25 / 25</div>
+                <img src="./25.jpg" class="portrait-img">
+            </div>
+
+            <!-- NEXT & PREVIOUS BUTTONS -->
+            <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <!-- SLIDER END -->
+
+    <!-- SOCIAL MEDIA -->
+    <div class="social-media">
+        <a href="https://500px.com/radekszybki">
+            <i class="fab fa-500px"></i>
+        </a>
+        <a href="https://www.facebook.com/radekszybkifoto/">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/radekszybki_foto/">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

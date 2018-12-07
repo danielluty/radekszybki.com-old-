@@ -1,0 +1,98 @@
+/* *** GENERAL STYLING *** */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: $text-color;
+}
+
+body {
+    background: url('../../img/kontynenty-radek.svg') no-repeat fixed;
+    background-size: cover;
+    background-color: $bg-color;
+    font-family: $main-font;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $header-nav-font;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-dimmed;
+
+    &:hover {
+        color: $text-color;
+    }
+}
+
+/* Social */
+.social-media {
+    position: fixed;
+    bottom: .3rem;
+    align-self: center;
+
+    i {
+        font-size: 2.2rem;
+        padding: 1rem;
+    }
+}
+
+/* *** Page Layout *** */
+.body-wrapper {
+    min-height: 100vh;
+    background-color: $bg-dimmed;
+    display: flex;
+
+    .main {
+        position: relative;
+        padding-top: 2.5rem;
+
+        h1 {
+            position: absolute;
+            display: inline-block;
+            left: 0;
+            top: .5rem;
+            padding-left: 1rem;
+            font-size: 2.6rem;
+            font-style: italic;
+            font-weight: lighter;
+            letter-spacing: 1rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(255, 255, 255, .4);
+        }
+    }
+}
+
+/* *** Media Queries *** */
+@include tablet {
+    .body-wrapper {
+        flex-direction: column;
+    }
+
+    .social-media {
+        background: $bg-color;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}

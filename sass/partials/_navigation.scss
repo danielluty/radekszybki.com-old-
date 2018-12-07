@@ -1,0 +1,115 @@
+/* *** NAVIGATION *** */
+
+.nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-dimmed;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+
+    /* Nav - Logo */
+    .nav-logo {
+        width: 200px;
+        padding: 2rem 1rem 3rem;
+        opacity: .85;
+    }
+
+    /* Toggler */
+    .nav-toggler {
+        display: none;
+    }
+
+    /* Nav - List */
+    .nav-ul {
+
+        .nav-item {
+            text-align: center;
+            margin: 0 1rem 1rem;
+
+            .nav-link {
+                font-family: $header-nav-font;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                padding: .2rem 1.3rem;
+
+                &.active,
+                &:hover {
+                    background-color: $bg-link;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+/* *** Media Queries *** */
+@include tablet {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+
+        .nav-logo {
+            width: 150px;
+            padding: 1rem 1rem .2rem;
+        }
+
+        .nav-ul {
+            display: flex;
+
+            .nav-item {
+                margin-bottom: .8rem;
+
+                .nav-link {
+                    font-size: 1.3rem;
+                    padding: 0 .5rem;
+                }
+            }
+        }
+        .nav-social-media {
+            top: 0;
+            right: 0;
+            height: 50%;
+        }
+    }
+}
+
+@include phone {
+    .nav {
+        align-items: center;
+    
+        .nav-toggler {
+            display: block;
+            padding: .4rem .8rem;
+            margin-right: 1rem;
+            font-size: 1.6rem;
+            color: $text-color;
+            border: 1px solid $text-color;
+            border-radius: .2rem;
+            opacity: .85;
+        }
+
+        .nav-ul {
+            display: none;
+            position: absolute;
+            top: 117px;
+            z-index: 999;
+            width: 100%;
+            background: $bg-dimmed;
+        }
+
+        .nav-social-media {
+            top: 2rem;
+            right: 50%;
+            transform: translateX(65%);
+
+            i {
+                font-size: 1.9rem;
+            }
+        }
+    }
+}

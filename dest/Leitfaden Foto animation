@@ -1,0 +1,11 @@
+Leitfaden Foto Animation:
+
+<!-- Animations -->
+
+<link rel="stylesheet" type="text/css" href="../../css/animate.min.css">
+
+<img src="./18.jpg" class="fit-image wow fadeIn" data-wow-delay="0.9s" onclick="openSlider();currentSlide(18)">
+
+<script src="../../js/wow.min.js"></script>
+
+
