@@ -45,10 +45,7 @@ a {
 
 /* Social */
 .social-media {
-  position: fixed;
-  bottom: .3rem;
-  -ms-flex-item-align: center;
-  align-self: center; }
+  margin-top: 1.5rem; }
   .social-media i {
     font-size: 2.2rem;
     padding: 1rem; }
@@ -62,7 +59,7 @@ a {
   display: flex; }
   .body-wrapper .main {
     position: relative;
-    padding-top: 2.5rem; }
+    padding: 2.5rem 0 4rem; }
     .body-wrapper .main h1 {
       position: absolute;
       display: inline-block;
@@ -119,12 +116,15 @@ a {
     transition: all .3s; }
     .nav .nav-ul .nav-item {
       text-align: center;
-      margin: 0 1rem 1rem; }
+      margin: 0 4rem 1.5rem; }
       .nav .nav-ul .nav-item .nav-link {
         font-family: "Raleway", serif;
         font-size: 1.8rem;
         text-transform: uppercase;
-        padding: .2rem 1.3rem; }
+        padding: .2rem 1.3rem;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s; }
         .nav .nav-ul .nav-item .nav-link.active, .nav .nav-ul .nav-item .nav-link:hover {
           background-color: rgba(74, 70, 65, 0.8);
           color: #dcdcf0; }
@@ -153,7 +153,7 @@ a {
       display: -ms-flexbox;
       display: flex; }
       .nav .nav-ul .nav-item {
-        margin-bottom: .8rem; }
+        margin: 0 1rem 1.5rem; }
         .nav .nav-ul .nav-item .nav-link {
           font-size: 1.3rem;
           padding: 0 .5rem; }
@@ -228,7 +228,8 @@ a {
       .main .content-wrapper .photo-wrapper h2 {
         font-size: 2.4rem; }
   .main.main-info .content-wrapper {
-    background: url("../../img/bg-machu.jpg") no-repeat center; }
+    background: url("../../img/bg-machu.jpg") no-repeat center;
+    margin-top: 0; }
     .main.main-info .content-wrapper .photo-wrapper {
       line-height: 1.7; }
   .main.main-news .content-wrapper {
@@ -330,7 +331,7 @@ a {
 /* Media Queries */
 @media only screen and (max-width: 1280px) {
   .main {
-    font-size: 1.3rem; }
+    font-size: 1.5rem; }
     .main .content-wrapper {
       width: 85%; }
       .main .content-wrapper .photo-wrapper h2 {
@@ -338,7 +339,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .main {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     margin-top: 120px; }
     .main .content-wrapper {
       width: 90%; }
@@ -353,7 +354,7 @@ a {
 
 @media only screen and (max-width: 640px) {
   .main {
-    font-size: 1.15rem; }
+    font-size: 1.25rem; }
     .main h1 {
       font-size: 1.6rem !important; }
     .main .content-wrapper .photo-wrapper h2 {
