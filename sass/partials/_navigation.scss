@@ -22,7 +22,7 @@
 
     /* Nav - List */
     .nav-ul {
-
+        transition: all .3s;
         .nav-item {
             text-align: center;
             margin: 0 1rem 1rem;
@@ -51,7 +51,7 @@
         align-items: flex-end;
         position: fixed;
         width: 100%;
-        z-index: 999;
+        z-index: 999;    
 
         .nav-logo {
             width: 150px;
@@ -60,6 +60,7 @@
 
         .nav-ul {
             display: flex;
+            
 
             .nav-item {
                 margin-bottom: .8rem;
@@ -74,6 +75,10 @@
             top: 0;
             right: 0;
             height: 50%;
+        }
+
+        .shrink {
+            height: 100px;
         }
     }
 }
@@ -113,3 +118,5 @@
         }
     }
 }
+
+

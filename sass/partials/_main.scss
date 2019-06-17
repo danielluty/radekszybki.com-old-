@@ -41,6 +41,9 @@
             background: url('../../img/bg-mace.jpg') no-repeat center;
 
             .photo-wrapper {
+                hr {
+                    margin: 1rem 0;
+                }
                 .news-item {
                     line-height: 1.5;
                 }
@@ -50,6 +53,11 @@
 
     /* Contact */
     &.main-contact {
+        form {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
         .content-wrapper {
             background: url('../../img/bg-usa.jpg') no-repeat center;
 
@@ -73,9 +81,9 @@
             margin: .5rem;
             transition: all .5s;
             cursor: pointer;
+        
 
             img {
-                border: 1px solid rgba(255, 255, 255, .2);
                 border-radius: .3rem;
                 width: 350px;
                 height: 200px;
@@ -116,7 +124,6 @@
                     padding: .5rem;
                     transition: .2s ease;
                     cursor: pointer;
-                    border: 1px solid $text-color;
 
                     &:hover {
                         box-shadow: 0 18px 50px 0 rgba(27, 19, 19, 0.8);

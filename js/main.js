@@ -8,7 +8,21 @@ $(function () {
             $('.nav-ul').removeAttr('style');
         };
     });
+
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+            $('.nav').addClass('shrink');
+            $('.nav-logo').css('width', '110px');
+            $('.nav-ul').css('top', '85px');
+        } else {
+            $('.navbar').removeClass('shrink');
+            $('.nav-logo').css('width', '');
+            $('.nav-ul').css('top', '117px');
+        }
+    });
 })
+
+
 
 /* *** IMAGE SLIDER *** */
 /* Show image when clicked */

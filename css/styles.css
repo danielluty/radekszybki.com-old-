@@ -28,7 +28,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", serif; }
+  font-family: "Raleway", serif; }
 
 img,
 svg {
@@ -113,17 +113,21 @@ a {
     opacity: .85; }
   .nav .nav-toggler {
     display: none; }
-  .nav .nav-ul .nav-item {
-    text-align: center;
-    margin: 0 1rem 1rem; }
-    .nav .nav-ul .nav-item .nav-link {
-      font-family: "Playfair Display", serif;
-      font-size: 1.8rem;
-      text-transform: uppercase;
-      padding: .2rem 1.3rem; }
-      .nav .nav-ul .nav-item .nav-link.active, .nav .nav-ul .nav-item .nav-link:hover {
-        background-color: rgba(74, 70, 65, 0.8);
-        color: #dcdcf0; }
+  .nav .nav-ul {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .nav .nav-ul .nav-item {
+      text-align: center;
+      margin: 0 1rem 1rem; }
+      .nav .nav-ul .nav-item .nav-link {
+        font-family: "Raleway", serif;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        padding: .2rem 1.3rem; }
+        .nav .nav-ul .nav-item .nav-link.active, .nav .nav-ul .nav-item .nav-link:hover {
+          background-color: rgba(74, 70, 65, 0.8);
+          color: #dcdcf0; }
 
 /* *** Media Queries *** */
 @media only screen and (max-width: 768px) {
@@ -156,7 +160,9 @@ a {
     .nav .nav-social-media {
       top: 0;
       right: 0;
-      height: 50%; } }
+      height: 50%; }
+    .nav .shrink {
+      height: 100px; } }
 
 @media only screen and (max-width: 640px) {
   .nav {
@@ -227,8 +233,21 @@ a {
       line-height: 1.7; }
   .main.main-news .content-wrapper {
     background: url("../../img/bg-mace.jpg") no-repeat center; }
+    .main.main-news .content-wrapper .photo-wrapper hr {
+      margin: 1rem 0; }
     .main.main-news .content-wrapper .photo-wrapper .news-item {
       line-height: 1.5; }
+  .main.main-contact form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .main.main-contact .content-wrapper {
     background: url("../../img/bg-usa.jpg") no-repeat center; }
     .main.main-contact .content-wrapper .photo-wrapper {
@@ -255,7 +274,6 @@ a {
       transition: all .5s;
       cursor: pointer; }
       .main.main-galleries figure img {
-        border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: .3rem;
         width: 350px;
         height: 200px;
@@ -270,7 +288,7 @@ a {
           -o-transition: opacity .4s;
           transition: opacity .4s; }
       .main.main-galleries figure figcaption {
-        font-family: "Playfair Display", serif;
+        font-family: "Raleway", serif;
         font-style: italic;
         position: absolute;
         right: 1.8rem;
@@ -298,8 +316,7 @@ a {
           -webkit-transition: .2s ease;
           -o-transition: .2s ease;
           transition: .2s ease;
-          cursor: pointer;
-          border: 1px solid #dcdcf0; }
+          cursor: pointer; }
           .main.main-photo-page .image-grid .column .fit-image:hover {
             -webkit-box-shadow: 0 18px 50px 0 rgba(27, 19, 19, 0.8);
             box-shadow: 0 18px 50px 0 rgba(27, 19, 19, 0.8);
@@ -412,7 +429,7 @@ a {
           .image-slider .slider-content .slides .slides-number {
             font-size: .75rem; } }
       .image-slider .slider-content .slides .portrait-img {
-        height: 98vh; }
+        height: 78vh; }
       .image-slider .slider-content .slides .landscape-img {
         width: 76vw; }
     .image-slider .slider-content .prev, .image-slider .slider-content .next {
